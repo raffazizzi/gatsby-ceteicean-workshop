@@ -40,4 +40,4 @@ npm start
 
 Transfomrations can be queued pre- and post- processing by gatsby-transformer-ceteicean. They are processed before ingestion into the GraphQL layer.
 
-* Examples yet to be added.
+* Run an XSLT to add note numbers: [`gatsby-config.js`](https://github.com/raffazizzi/gastby-ceteicean-workshop/blob/main/gatsby-config.js) and [`applyxst.js`](https://github.com/raffazizzi/gastby-ceteicean-workshop/blob/main/scripts/applyxslt.js)
