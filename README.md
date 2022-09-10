@@ -1,54 +1,43 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Gatsby CETEIcean Workshop
 
-## 🚀 Quick start
+This repository was created for the TEI Members Meeting and Conference workshop _Building TEI-powered websites with static site technology. A hands on exploration of the publishing toolkit of the Scholarly Editing Journal_.
 
-1.  **Create a Gatsby site.**
+This is a simple Gatsby site showcasing some uses of the libraries [gatsby-transformer-ceteicean](https://www.npmjs.com/package/gatsby-transformer-ceteicean) and [gatsby-theme-ceteicean](https://www.npmjs.com/package/gatsby-theme-ceteicean).
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+To keep things simple, this template uses JavaScript (as opposed to TypeScript) and CSS imports. For a more sophisticated use of these tools, look at the [Scholarly Editing Micro-Editions Template](https://gitlab.com/scholarly-editing/se-microedition-template).
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+## Usage
 
-2.  **Start developing.**
+Make sure you have the latest Node JS LTS installed. Then install with:
 
-    Navigate into your new site’s directory and start it up.
+```
+npm i
+```
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+And run the site with:
 
-3.  **Open the code and start customizing!**
+```
+npm start
+```
 
-    Your site is now running at http://localhost:8000!
+## Examples included
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+### Basic Gatsby principles
 
-4.  **Learn more**
+* plugins configuration: [`gatsby-config.js`](https://github.com/raffazizzi/gastby-ceteicean-workshop/blob/main/gatsby-config.js)
+* querying data from GraphQL
+  * querying `siteMetadata` for metadata and a navbar: [`layout.js`](https://github.com/raffazizzi/gastby-ceteicean-workshop/blob/main/src/components/layout.js#L10)
+  * querying TEI data loaded by gatsby-transformer-ceteicean to build a TOC: [`index.js`](https://github.com/raffazizzi/gastby-ceteicean-workshop/blob/main/src/pages/index.js#L7)
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+### Shadowing gatsby-theme-ceteicean
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+* defining a simple React component for a TEI element: [`Pb.js`](https://github.com/raffazizzi/gastby-ceteicean-workshop/blob/main/src/gatsby-theme-ceteicean/components/Pb.js)
+* mapping (routing) TEI elements to default and custom React components: [`Ceteicean.js`](https://github.com/raffazizzi/gastby-ceteicean-workshop/blob/main/src/gatsby-theme-ceteicean/components/Ceteicean.js#L17)
+* React component with state management and component composition: [`Note.js`](https://github.com/raffazizzi/gastby-ceteicean-workshop/blob/main/src/gatsby-theme-ceteicean/components/Note.js)
+* React component as above with TEI DOM lookup: [`PlaceName.js`](https://github.com/raffazizzi/gastby-ceteicean-workshop/blob/main/src/gatsby-theme-ceteicean/components/PlaceName.js)
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+### Applying TEI transformations
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Transfomrations can be queued pre- and post- processing by gatsby-transformer-ceteicean. They are processed before ingestion into the GraphQL layer.
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+* Examples yet to be added.

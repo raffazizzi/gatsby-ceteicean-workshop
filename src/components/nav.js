@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import "./nav.css"
 
 const Nav = ({ location, title, menuLinks }) => {
-  console.log(location)
   return (
     <div className="Nav">
       <h1>{title}</h1>
