@@ -1,0 +1,22 @@
+body, html {
+  margin: -11px 0 0 0;
+}
+
+a, a:visited {
+  color: #000
+}
+
+a:hover {
+  color: #cd5c5c;
+}
+
+.Content {
+  margin: 0 auto;
+  padding: 0 20%;
+  min-height: 80vh;
+}
+
+.Footer {
+  padding: 1em;
+  background-color: antiquewhite;
+}

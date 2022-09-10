@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://vault.tei-c.org/P5/current/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://vault.tei-c.org/P5/current/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+				<title level="m" type="main">Live Oak, with Moss.</title>
+				<title level="m" type="sub">a machine readable transcription</title>
+				<author>Walt Whitman</author>
+				<editor>Steven Olsen-Smith</editor>
+				<respStmt>
+					<resp>Transcription</resp>
+					<name xml:id="sos">Steven Olsen-Smith</name>
+				</respStmt>
+			</titleStmt>
+         <publicationStmt>
+            <p>Excerpt extracted and modified for training purposes from a digital edition published in
+            Scholarly Editing, Vol. 33. 
+            Licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</p>
+         </publicationStmt>
+         <sourceDesc>
+				<bibl>
+					<author> Walt Whitman </author>
+					<title>MSS3829 Leaves of Grass, Volume 1, item 60</title>
+					<orgName>Clifton Waller Barrett Library of American Literature, Albert and Shirley Small Special Collections Library, University of Virginia</orgName>
+				</bibl>
+			</sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <pb n="1" />
+         <ab>
+            <lg>
+            <head>VI.</head>
+            <lg><l>What think you I have</l>
+                  <l>taken my pen to record?</l></lg>
+            <lg><l>Not the battle-ship,<note n="1">Some battleship</note> perfect-</l>
+                  <l>model'd, majestic, that I saw</l>
+                  <l>to day arrive in the offing,</l>
+                  <l>under full sail,</l></lg>
+            <lg><l>Nor the splendors of the past</l>
+                  <l>day—nor the splendors of</l>
+                  <l>the night that envelopes me—</l>
+                  <l>Nor the glory and growth of</l>
+                  <l><placeName ref="#city">the great city</placeName> spread around</l>
+                  <l>me,</l></lg>
+            <lg><l>But the two <del>young</del> men I saw</l>
+                  <l>to-day on the pier, parting</l>
+                  <l>the parting of dear friends.</l></lg>
+            <lg><l>The one <subst><del>who remained</del> <add>to remain</add></subst> hung on</l>
+                  <l>the other's neck and passionately</l>
+                  <l>kissed him—while the one</l>
+                  <l>who departed to depart tightly prest the</l>
+                  <l>one who remained to remain in his arms.</l></lg>
+            </lg>
+         </ab>
+      </body>
+   </text>
+   <standOff>
+      <listPlace>
+         <place xml:id="city">
+            <p>Some city.</p>
+         </place>
+      </listPlace>
+   </standOff>
+</TEI>

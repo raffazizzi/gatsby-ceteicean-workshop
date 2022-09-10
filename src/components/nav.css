@@ -1,0 +1,31 @@
+.Nav {
+  height: 120px;
+  background-color: cadetblue;
+  padding: 1em;
+}
+
+.Nav ul {
+  margin-left: -2.2em;
+}
+
+.Nav ul li {
+  display: inline;
+  list-style: none;
+  margin-right: 2em;
+  font-weight: 700;
+  border: 1px solid #cd5c5c;
+  padding: 5px;
+}
+
+.Nav ul li a, .Nav ul li a:visited {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.Nav ul li a:hover {
+  color: #cd5c5c;
+}
+
+.Nav .active a {
+  color: #cd5c5c !important;
+}

@@ -1,0 +1,18 @@
+.Popup {
+  border: 2px solid #cd5c5c;
+  background-color: antiquewhite;
+  min-width: 500px;
+  min-height: 150px;
+  position: absolute;
+  top: 25%;
+  right: 15%;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 3px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  padding: 1em;
+}
+
+.Popup  .Close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
