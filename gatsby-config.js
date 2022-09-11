@@ -14,25 +14,7 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    // `gatsby-theme-ceteicean`, // USE THIS IF YOU DON'T NEED THE OPTIONS BELOW
-    {
-      resolve: `gatsby-theme-ceteicean`,
-      options: {
-        applyBefore: [(obj) => applyxslt(obj, "notenumbers.sef.json")],
-        applyAfter: [],
-        namespaces: {
-          "http://www.tei-c.org/ns/1.0": "tei",
-          "http://www.tei-c.org/ns/Examples": "teieg",
-          "http://www.w3.org/2001/XInclude": "xi"
-        }
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `static/tei`,
-      },
-    },
-  ],
+  // TODO: Add plugins
+  // gatsby-theme-ceteicean
+  // and gatsby-source-filesystem reading files from static/tei
 }

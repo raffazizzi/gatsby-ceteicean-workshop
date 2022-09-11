@@ -1,7 +1,5 @@
 import React from "react"
 import { Behavior } from "gatsby-theme-ceteicean/src/components/Behavior"
-// import { GatsbyImage } from "gatsby-plugin-image"
-import Popup from "../../components/popup"
 
 import "./note.css"
 
@@ -11,20 +9,13 @@ const Note = ({teiNode}) => {
   const n = note.getAttribute('n') || ''
   const text = note.textContent
 
-  const [popupOn, setPopupOn] = React.useState(false)
-  let popup = null
-
-  const togglePopup = () => {
-    setPopupOn(!popupOn)
-  }
-
-  if (popupOn) {
-    popup = <Popup toggle={togglePopup} title={`Note ${n}`}>{text}</Popup>
-  }
+  // TODO:
+  //
+  // Add a popup (../../components/popup) to showed the content of the note
+  // Use React.useState() to manage its visibility.
 
   return <Behavior node={teiNode}>
-    <sup className="Note" onClick={togglePopup}>{n}</sup>
-    {popup}
+    <sup className="Note">{n}</sup>
   </Behavior>
 }
 

@@ -4,9 +4,6 @@ import {
   Tei,
   TeiHeader
 } from "gatsby-theme-ceteicean/src/components/DefaultBehaviors"
-import Pb from "./Pb"
-import Note from "./Note"
-import PlaceName from "./PlaceName"
 import Layout from "../../components/layout"
 
 import "./ceteicean.css"
@@ -14,12 +11,11 @@ import "./style.css"
 
 const MyCeteicean = ({pageContext}) => {
 
+  // TODO: Add components for pb, note, and placeName
+
   const routes = {
     "tei-tei": Tei,
     "tei-teiheader": TeiHeader,
-    "tei-note": Note,
-    "tei-placename": PlaceName,
-    "tei-pb": (props) => <Pb {...props}/>,
   }
 
   return(
