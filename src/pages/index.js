@@ -12,6 +12,10 @@ const Index = () => {
       <div>
         <h3>Documents:</h3>
         <Link to="example">Example</Link>
+        {/* <ul>{teifiles.map(file => (
+          <li><Link to={file.parent.name}>{file.parent.name}</Link></li>
+        ))}
+        </ul> */}
       </div>
     </Layout>
   )
