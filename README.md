@@ -1,6 +1,6 @@
 # Gatsby CETEIcean Workshop
 
-This repository was created for the TEI Members Meeting and Conference workshop _Building TEI-powered websites with static site technology. A hands on exploration of the publishing toolkit of the Scholarly Editing Journal_.
+This repository was created for the TEI Conference and Members' Meeting 2022 workshop _Building TEI-powered websites with static site technology. A hands on exploration of the publishing toolkit of the Scholarly Editing Journal_.
 
 This is a simple Gatsby site showcasing some uses of the libraries [gatsby-transformer-ceteicean](https://www.npmjs.com/package/gatsby-transformer-ceteicean) and [gatsby-theme-ceteicean](https://www.npmjs.com/package/gatsby-theme-ceteicean).
 
