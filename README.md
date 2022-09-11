@@ -6,6 +6,8 @@ This is a simple Gatsby site showcasing some uses of the libraries [gatsby-trans
 
 To keep things simple, this template uses JavaScript (as opposed to TypeScript) and CSS imports. For a more sophisticated use of these tools, look at the [Scholarly Editing Micro-Editions Template](https://gitlab.com/scholarly-editing/se-microedition-template).
 
+For the purposes of the workshop, the `main` branch has an incomplete project for attendees to work on. The complete template is in the `complete` branch.
+
 ## Usage
 
 Make sure you have the latest Node JS LTS installed. Then install with:
@@ -20,7 +22,9 @@ And run the site with:
 npm start
 ```
 
-## Examples included
+## Examples included in the `complete` branch
+
+For the purposes of the workshop, the `main` branch has an incomplete project for attendees to work on. The complete template is in the `complete` branch.
 
 ### Basic Gatsby principles
 
