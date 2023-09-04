@@ -11,7 +11,8 @@ const Index = () => {
       <h2>My edition</h2>
       <div>
         <h3>Documents:</h3>
-        <Link to="example">Example</Link>
+        <Link to="example">TEI Example</Link>
+        <Link to="verovio">Verovio Example</Link>
         {/* <ul>{teifiles.map(file => (
           <li><Link to={file.parent.name}>{file.parent.name}</Link></li>
         ))}
