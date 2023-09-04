@@ -40,6 +40,9 @@ For the purposes of the workshop, the `main` branch has an incomplete project fo
 * React component with state management and component composition: [`Note.js`](https://github.com/raffazizzi/gastby-ceteicean-workshop/blob/main/src/gatsby-theme-ceteicean/components/Note.js)
 * React component as above with TEI DOM lookup: [`PlaceName.js`](https://github.com/raffazizzi/gastby-ceteicean-workshop/blob/main/src/gatsby-theme-ceteicean/components/PlaceName.js)
 
+### Verovio
+* integrate Verovio in a component via useEffect and add some interactivity through state management: [`Verovio.js`](https://github.com/raffazizzi/gatsby-ceteicean-workshop/blob/complete/src/pages/verovio.js)
+
 ### Applying TEI transformations
 
 Transformations can be queued pre- and post- processing by gatsby-transformer-ceteicean. They are processed before ingestion into the GraphQL layer.
