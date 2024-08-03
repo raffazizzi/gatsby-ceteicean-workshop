@@ -26,7 +26,7 @@ const Layout = ({ location, children }) => {
       <Head title={title}/>
       <Nav location={location || ''} title={title} menuLinks={menuLinks} />
       <main className="Content">{children}</main>
-      <footer className="Footer">Gastby CETEIcean Workshop - Joint MEC and TEI Conference 2023 - Code license: MIT - Contents license: CC-A-NC-SA 4.0</footer>
+      <footer className="Footer">Gastby CETEIcean Workshop - Code license: MIT - Contents license: CC-A-NC-SA 4.0</footer>
     </>
   )
 }
