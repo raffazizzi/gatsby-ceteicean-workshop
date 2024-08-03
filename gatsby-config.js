@@ -15,7 +15,20 @@ module.exports = {
     ]
   },
   plugins: [
-    `gatsby-theme-ceteicean`,
+    // `gatsby-theme-ceteicean`, // USE THIS FOR SIMPLE USE CASES (TEI ONLY).
+    // Use with additional namespaces:
+    {
+      resolve: `gatsby-theme-ceteicean`,
+      options: {
+        namespaces: {
+          "http://www.tei-c.org/ns/1.0": "tei",
+          "http://www.tei-c.org/ns/Examples": "teieg",
+          "http://www.w3.org/2001/XInclude": "xi",
+          "http://docbook.org/ns/docbook": "db",
+          "http://www.w3.org/1999/xlink": "xlink",
+        }
+      }
+    },
     // ADVANCED USE EXAMPLE BELOW:
     // {
     //   resolve: `gatsby-theme-ceteicean`,
@@ -25,7 +38,9 @@ module.exports = {
     //     namespaces: {
     //       "http://www.tei-c.org/ns/1.0": "tei",
     //       "http://www.tei-c.org/ns/Examples": "teieg",
-    //       "http://www.w3.org/2001/XInclude": "xi"
+    //       "http://www.w3.org/2001/XInclude": "xi",
+    //       "http://docbook.org/ns/docbook": "db",
+    //       "http://www.w3.org/1999/xlink": "xlink",
     //     }
     //   }
     // },

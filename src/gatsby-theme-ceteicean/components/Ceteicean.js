@@ -7,6 +7,7 @@ import {
 import Pb from "./Pb"
 import Note from "./Note"
 import PlaceName from "./PlaceName"
+import DBLink from "./DBLink"
 import Layout from "../../components/layout"
 
 import "./ceteicean.css"
@@ -19,7 +20,9 @@ const MyCeteicean = ({pageContext}) => {
     "tei-teiheader": TeiHeader,
     "tei-note": Note,
     "tei-placename": PlaceName,
-    "tei-pb": (props) => <Pb {...props}/>,
+    "tei-pb": Pb,
+    // DocBook Components
+    "db-link": DBLink
   }
 
   return(

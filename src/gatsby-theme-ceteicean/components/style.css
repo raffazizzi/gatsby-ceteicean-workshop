@@ -5,3 +5,24 @@ tei-del {
 tei-add {
   color: #cd5c5c;
 }
+
+tei-standOff {
+  display: none;
+}
+
+/* DocBook CSS */
+
+db-title {
+  display: block;
+  font-family: Arvo, sans-serif;
+  font-weight: normal;
+  font-size: 180%;
+  text-indent: -0.5em;
+}
+
+db-para {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: justify;
+}

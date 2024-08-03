@@ -43,6 +43,10 @@ For the purposes of the workshop, the `main` branch has an incomplete project fo
 ### Verovio
 * integrate Verovio in a component via useEffect and add some interactivity through state management: [`Verovio.js`](https://github.com/raffazizzi/gatsby-ceteicean-workshop/blob/complete/src/pages/verovio.js)
 
+### DocBook
+
+A simple DocBook example showcases how the CETEIcean plugins can be used with other non-TEI XML formats.
+
 ### Applying TEI transformations
 
 Transformations can be queued pre- and post- processing by gatsby-transformer-ceteicean. They are processed before ingestion into the GraphQL layer.
