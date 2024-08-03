@@ -22,9 +22,10 @@ const Index = () => {
       <h2>My edition</h2>
       <div>
         <h3>Documents:</h3>
-        <ul>{teifiles.map(file => (
-          <li><Link to={file.parent.name}>{file.parent.name}</Link></li>
-        ))}
+        <ul>
+          {teifiles.map(file => (
+            <li><Link to={file.parent.name}>{file.parent.name}</Link></li>
+          ))}
         <li><Link to="verovio">Verovio example</Link></li>
         </ul>
       </div>
