@@ -16,15 +16,15 @@
     "xslt": "node node_modules/xslt3/xslt3.js -xsl:scripts/notenumbers.xsl -export:scripts/notenumbers.sef.json -nogo"
   },
   "dependencies": {
-    "gatsby": "^4.22.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "gatsby": "^5.13.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "gatsby-source-filesystem": "^4.22.0",
-    "gatsby-theme-ceteicean": "^3.2.0",
+    "gatsby-source-filesystem": "^5.13.1",
+    "gatsby-theme-ceteicean": "^3.3.1",
     "gatsby-transformer-ceteicean": "^1.2.0",
-    "saxon-js": "^2.4.0",
-    "xslt3": "^2.4.0"
+    "saxon-js": "^2.6.0",
+    "xslt3": "^2.6.0"
   }
 }
