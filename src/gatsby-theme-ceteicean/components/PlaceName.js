@@ -8,9 +8,11 @@ import "./placename.css"
 const PlaceName = (props) => {
   
   const placeName = props.teiNode
-  const placeText = placeName.textContent
-  
-  // TODO: Find referenced place element.
+  const target = placeName.getAttribute("ref")
+  const id = target.replace('#', '')
+  const place = placeName.ownerDocument.getElementById(id)
+
+  let placeText = placeName.textContent
 
   const [popupOn, setPopupOn] = React.useState(false)
   let popup = null
@@ -20,8 +22,11 @@ const PlaceName = (props) => {
   }
 
   if (popupOn) {
-    // TODO: Add the content of the referenced place element.
-    popup = <Popup toggle={togglePopup} title={placeText}/>
+    popup = <Popup toggle={togglePopup} title={placeText}>
+      <TEINodes 
+        teiNodes={place.childNodes}
+        {...props}/>
+    </Popup>
   }
 
   return <Behavior node={props.teiNode}>
